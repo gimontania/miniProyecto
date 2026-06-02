@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css"/>
+    <title>miniProyecto</title>
+  </head>
+  
+  <body class="bg-[#0D1117] text-white"> <!--fondo oscuro-->
+    <header class="flex justify-between items-center p-4 "> <!--cabecera principal,class=flex activa flexbox, uno al lado del otro, justify los pone a los extremos, item-center centra verticalmente, p-4 padding-->
+      <img src="./src/img/logo.png" alt="logo" class="w-12"> <!--logo w-12 ancho de la imagen-->
+
+      <button aria-label="menú"> <!--botón menú hamburguesa-->
+        ☰
+      </button>
+    </header>
+
+    <!--hero-->
+    <section class="flex flex-col items-center text-center px-6 py-10"><!--flex-col los elementos se apilan-->
+      
+
+      <h1 class="text-4xl  font-bold mb-2">I'm <span class="text-[#E3FF6A]">Gi Montania</span></h1> <!--span sirve para modificar solo una parte del texto-->
+      <h2 class="text-2xl  font-semibold mb-6">Frontend Developer</h2>
+
+      <img src="./src/img/gi.png" alt="foto de perfil" class="w-52 mb-6">
+
+      <button class="bg-[#E3FF6A] text-black px-6 py-3 rounded-full font-bold">My Projects</button>
+
+    </section> <!--fin hero-->
+
+    <!--who i`m-->
+    <section class="px-6 py-10 flex flex-col items-center text-center"><!--centro toda la parte who i´m-->
+
+      <h2 class="text-3xl font-bold mb-6">WHO AM I?</h2>
+      <p class="text-gray-300 mb-6">Soy una desarrolladora web apasionada que disfruta creando aplicaciones web modernas, adaptables y fáciles de usar.
+Me encanta aprender nuevas tecnologías y mejorar mis habilidades
+cada día.</p>
+
+      <button class="bg-[#E3FF6A] text-black px-6 py-3 rounded-full font-bold">ver más</button> 
+
+    </section> <!--fin who i`m-->
+
+    <!--skills-->
+    <section class="px-6 py-10 flex flex-col items-center text-center">
+
+      <h2 class="text-3xl text-[#E3FF6A] font-bold mb-8">My skills</h2><!--titulo-->
+
+      <!--Grid de tecnologías-->
+      <div class="grid grid-cols-2 gap-6">
+
+        <div class="flex flex-col items-center">
+          <img src="./src/img/logoHtml.png" alt="HTML" class="w-16 mb-2">
+          <p>HTML</p>
+         </div> 
+
+         <div class="flex flex-col items-center">
+          <img src="./src/img/logoCSS.png" alt="CSS" class="w-16 mb-2">
+          <p>CSS</p>
+         </div> 
+
+         <div class="flex flex-col items-center">
+          <img src="./src/img/logoJS.png" alt="JavaScript" class="w-16 mb-2">
+          <p>JavaScript</p>
+         </div> 
+
+         <div class="flex flex-col items-center">
+          <img src="./src/img/logoTailwind.png" alt="Tailwind" class="w-16 mb-2">
+          <p>TAILWIND</p>
+         </div> 
+
+         <div class="flex flex-col items-center">
+          <img src="./src/img/logoJS2.png" alt="JS" class="w-16 mb-2">
+          <p>JS</p>
+         </div> 
+
+         <div class="flex flex-col items-center">
+          <img src="./src/img/logoAtom.png" alt="Atom" class="w-16 mb-2">
+          <p>Atom</p>
+         </div> 
+         
+      </div>
+
+      <button class="mt-8 bg-[#E3FF6A] text-black px-6 py-3 rounded-full font-bold">Descargar CV</button>
+
+    </section>
+
+
+
+
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
