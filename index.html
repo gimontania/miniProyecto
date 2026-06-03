@@ -3,27 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--hace que sea responsive en celulares y tablets-->
+    <link rel="stylesheet" href="./src/style.css"/><!--conecta mi css con el html-->
     <title>miniProyecto</title>
   </head>
   
   <body class="bg-[#0D1117] text-white"> <!--fondo oscuro-->
-    <header class="flex justify-between items-center p-4 max-w-6xl mx-auto"> <!--cabecera principal,class=flex activa flexbox, uno al lado del otro, justify los pone a los extremos, item-center centra verticalmente, p-4 padding-->
-      <img src="./src/img/logo.png" alt="logo" class="w-12"> <!--logo w-12 ancho de la imagen-->
+  
+    <header class="relative flex justify-between items-center p-4 max-w-6xl mx-auto"><!--cabecera principal,class=flex activa flexbox, uno al lado del otro, justify los pone a los extremos, item-center centra verticalmente, p-4 padding-->
+
+      <!--logo w-12 ancho de la imagen-->
+      <img src="./src/img/logo.png" alt="logo" class="w-12 rounded-full"> <!--con rounded-full redondeo la imagen-->
 
       <!--menú escritorio-->
-      <nav class="hidden md:flex gap-8"><a href="#home" class="hover:text-[#E3FF6A]  transition">Home</a><a href="#skills"class="hover:text-[#E3FF6A]  transition">Skills</a><a href="#projects" class="hover:text-[#E3FF6A]  transition">Projects</a><a href="#contact" class="hover:text-[#E3FF6A]  transition">Contact</a></nav> <!--hidden para oculto en mobil, md:flex aparece en tablet/escritorio, gap-6 separacion entre enlaces-->
+      <nav class="hidden md:flex gap-8"><a href="#home" class="hover:text-[#E3FF6A]  transition">Home</a><a href="#skills"class="hover:text-[#E3FF6A]  transition">Skills</a><a href="#projects" class="hover:text-[#E3FF6A]  transition">Projects</a><a href="#contact" class="hover:text-[#E3FF6A]  transition">Contact</a></nav> <!--hidden para oculto en mobil, md:flex aparece en tablet/escritorio, gap-6 separacion entre enlaces, deja espacio entre los elementos del menú, hover:text-[] al pasar el mouse cambia de color el enlace-->
     
       <!--menú mobile-->
-      <button aria-label="menu" class="md:hidden"> <!--botón menú hamburguesa-->
+      <!--botón menú hamburguesa-->
+      <!--creé otro div, porque no  me funcionaba por ser hermanos-->
+      <div class="relative md:hidden">
+
+      <button id="menuBtn" aria-label="menu" class="md:hidden"> 
         ☰
+      </button><!--id="menuBtn", le da un identificador único, con hidden elmenú comienza oculto-->
+
+      <div id="mobileMenu" class="hidden absolute top-full right-0 mt-2 bg-[#1E293B] border border-[#A4FF7A] p-4 rounded-xl"> <a href="#home" class="block mb-2 text-[FFFFFF] hover:text-[#E3FF6A] transition">Home</a> <a href="#skills" class="block mb-2 text-[FFFFFF] hover:text-[#E3FF6A] transition">Skills</a> <a href="#projects" class="block mb-2 text-[FFFFFF] hover:text-[#E3FF6A] transition">Projects</a> <a href="#contact" class="block mb-2 text-[FFFFFF] hover:text-[#E3FF6A] transition">Contact</a><!--con top-full ubico el menú debajo del elemento de referencia, my-2 agrego un pequeño margen superior-->
+
+      </div>
+      </div>
+
+      <button id="darkModeBtn" class="bg-[#E3FF6A] text-black px-4 py-2 rounded-full">🌙
+
       </button>
 
-</header>
+    </header>
 
     <!--hero-->
-    <section id="home" class="flex flex-col items-center text-center px-6 py-10 min-h-screen justify-center bg-linear-to-br from-[#1E293B] to-[#0D1117]"><!--flex-col los elementos se apilan-->
+    <section id="home" class="flex flex-col items-center text-center px-6 py-10 min-h-screen justify-center /*bg-linear-to-br from-[#1E293B] to-[#0D1117]*/"><!--flex-col los elementos se apilan-->
       
 
       <h1 class="text-4xl  font-bold mb-2">I'm <span class="text-[#E3FF6A]">Gi Montania</span></h1> <!--span sirve para modificar solo una parte del texto-->
@@ -59,7 +75,7 @@
       <h2 class="text-3xl text-[#E3FF6A] font-bold mb-8">My Skills</h2><!--titulo-->
 
       <!--Grid de tecnologías-->
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- esto lo cambio al JS: <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
 
         <div class="flex flex-col items-center">
           <img src="./src/img/logoHtml.png" alt="HTML" class="w-16 mb-2">
@@ -89,22 +105,30 @@
          <div class="flex flex-col items-center">
           <img src="./src/img/logoGit.png" alt="Git" class="w-16 mb-2">
            
-         </div> 
+         </div>  
          
+      </div> -->
+
+      <div id="skills-container" class="grid grid-cols-2 md:grid-cols-3 gap-6">
+
       </div>
 
-      <button class="mt-8 bg-[#E3FF6A] text-black px-6 py-3 rounded-full font-bold">Download CV</button>
+      <button class="mt-8 bg-[#E3FF6A] text-black px-6 py-3 rounded-full font-bold">Download CV
+
+      </button>
 
     </section> <!--fin skills-->
 
-
+   
     <!-- my projects-->
-    <section id="projects" class="px-6 py-10 flex  flex-col items-center text-center">
+    <section  class="px-6 py-10 flex  flex-col items-center text-center">
             
       <h2 class="text-3xl font-bold mb-8">My Projects</h2>
+      <div id="projects" class="flex flex-col md:flex-row gap-4 justify-center"></div> <!--este div es para que se conecte con el js-->
 
-      <div class="flex flex-col md:flex-row gap-6 w-full max-w-5xl justify-center">
+      <!-- <div class="flex flex-col md:flex-row gap-6 w-full max-w-5xl justify-center">
 
+        
         <article class="bg-[#1E293B] p-4 rounded-xl w-full md:w-80 hover:scale-105 transition">
           <img src="./src/img/proyecto1.png" alt="Proyecto 1" class="rounded-lg mb-4">
 
@@ -117,6 +141,7 @@
           </button>
         </article>
         
+         
         <article class="bg-[#1E293B] p-4 rounded-xl w-full md:w-80 hover:scale-105 transition">
           <img src="./src/img/proyecto2.png" alt="Proyecto 2" class="rounded-lg mb-4">
 
@@ -131,7 +156,8 @@
           </button>
         </article>
 
-        <article class="bg-[#1E293B] p-4 rounded-xl w-full md:w-80">
+         
+        <article class="bg-[#1E293B] p-4 rounded-xl w-full md:w-80 hover:scale-105 transition">
           <img src="./src/img/proyecto3.png" alt="Proyecto 3" class="rounded-lg mb-4">
 
           <h3 class="text-xl font-bold mb-2">JSON Data Viewer</h3>
@@ -144,8 +170,15 @@
         </article>
 
 
-      </div>
+      </div> -->
+    </section> 
+
+
+    <section class="px-6 py-10 flex  flex-col items-center text-center">
+      <h2 class="text-3xl font-bold mb-8">My Favourite Projects</h2>
+      <div id="favprojects" class="flex flex-col md:flex-row gap-4 justify-center"></div>
     </section>
+
 
     <!--contact--> 
     <section id="contact" class="px-6 py-10 flex flex-col items-center text-center">

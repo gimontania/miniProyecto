@@ -1,0 +1,26 @@
+export const habilidades = [ //export permite que este dato pueda usarse en otros archivos
+    {
+        nombre:"",
+        imagen:"../src/img/logoHtml.png"
+    },
+    {
+        nombre:"",
+        imagen:"../src/img/logoCSS.png"
+    },
+    {
+        nombre:"",
+        imagen:"../src/img/logoJS.png"
+    },
+    {
+        nombre:"",
+        imagen:"../src/img/logoTailwind.png"
+    },
+    {
+        nombre:"",
+        imagen:"../src/img/logoJS2.png"
+    },
+    {
+        nombre:"",
+        imagen:"../src/img/logoGit.png"
+    },
+]

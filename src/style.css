@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+body{
+    background-color: #0d1117;
+    color: white;
+}
+
+body.light{
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+
+/*como no cambia de color en modo claro, porque mi hero tiene colores fijos, agrego esto aprovechando usa el id en el hero*/
+body #home {
+    background:linear-gradient(to bottom right,#1E293B, #0D1117 );
+}
+/*hero en modo claro*/
+body.light #home {
+    background:linear-gradient(to bottom right,#ffffff, #f8fafc );
+}
+
+
