@@ -11,32 +11,32 @@ const mainSkillsContainer = document.getElementById("skills-container");
 
 const myMainSkills = [
   {
-      nombre: 1,
+      nombre:"",
       picture: "../public/logoHtml.png",
        
   },
   {
-      nombre: 2,
+      nombre: "",
       picture: "../public/logoCSS.png",
          
   },
   {
-      nombre: 3,
+      nombre: "",
       picture: "../public/logoJS.png",
          
   },
   {
-      nombre: 4,
+      nombre: "",
       picture: "../public/logoTailwind.png",
        
   },
   {
-      nombre: 2,
+      nombre: "",
       picture: "../public/logoJS2.png",
        
   },
   {
-      nombre: 3,
+      nombre: "",
       picture: "../public/logoGit.png",
        
   }
