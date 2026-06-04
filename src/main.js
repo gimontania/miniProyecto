@@ -167,3 +167,10 @@ myfavprojects.forEach((favprojects) => {
     `
 })
 
+
+const formulario = document.getElementById('contact');
+formulario.addEventListener("click",(e) => {
+    e.preventDefault()
+
+} ) 
+
