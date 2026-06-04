@@ -37,7 +37,7 @@ const myMainSkills = [
   },
   {
       nombre: "",
-      picture: "./ogoGit.png",
+      picture: "./logoGit.png",
        
   }
 ];
