@@ -21,3 +21,12 @@ body.light #home {
 }
 
 
+.card {
+    background-color: #1E293B;
+    transition: all 0.3s ease;
+}
+
+body.light .card {
+    background-color: white;
+    color:#0f172a ;
+}

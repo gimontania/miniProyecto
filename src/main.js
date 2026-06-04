@@ -11,7 +11,7 @@ const mainSkillsContainer = document.getElementById("skills-container");
 
 const myMainSkills = [
   {
-      nombre:"",
+      nombre: "",
       picture: "./logoHtml.png",
        
   },
@@ -45,7 +45,7 @@ const myMainSkills = [
 let mainSkillsHTML = "";
 myMainSkills.forEach(function(skill) { 
   mainSkillsHTML += `
-      <div class ="bg-[#1E293B] p-4 rounded-xl text-center hover:scale-105 transition mb-4">
+      <div class ="card p-4 rounded-xl text-center hover:scale-105 transition mb-4">
           <img src="${skill.picture}" alt="${skill.nombre}" class="w-16 h-16">
       </div>
     `;
@@ -124,7 +124,7 @@ const myprojects = [
 myprojects.forEach((project) => {
     projectContainer.innerHTML += `
     
-    <div class ="bg-[#1E293B] p-4 rounded-xl text-center hover:scale-105 transition mb-4">
+    <div class ="card p-4 rounded-xl text-center hover:scale-105 transition mb-4">
 
     <img src="${project.imagen}" alt="${project.nombre}" class="w-16 mx-auto mb-2">
 
@@ -156,7 +156,7 @@ const myfavprojects = [
 myfavprojects.forEach((favprojects) => {
     favContainer.innerHTML += `
     
-    <div class ="bg-[#1E293B] p-4 rounded-xl text-center hover:scale-105 transition mb-4">
+    <div class ="card p-4 rounded-xl text-center hover:scale-105 transition mb-4">
 
     <img src="${favprojects.imagen}" alt="${favprojects.nombre}" class="w-16 mx-auto mb-2">
 
