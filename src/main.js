@@ -12,7 +12,7 @@ const mainSkillsContainer = document.getElementById("skills-container");
 const myMainSkills = [
   {
       nombre:"",
-      picture: "../img/logoHtml.png",
+      picture: "./logoHtml.png",
        
   },
   {
@@ -22,22 +22,22 @@ const myMainSkills = [
   },
   {
       nombre: "",
-      picture: "../public/logoJS.png",
+      picture: "./logoJS.png",
          
   },
   {
       nombre: "",
-      picture: "../public/logoTailwind.png",
+      picture: "./logoTailwind.png",
        
   },
   {
       nombre: "",
-      picture: "../public/logoJS2.png",
+      picture: "./logoJS2.png",
        
   },
   {
       nombre: "",
-      picture: "../public/logoGit.png",
+      picture: "./ogoGit.png",
        
   }
 ];
@@ -109,15 +109,15 @@ const projectContainer = document.getElementById('projects');
 const myprojects = [
     {
         nombre:"Proyecto 1",
-        imagen:"../public/img/proyecto1.png"
+        imagen:"./img/proyecto1.png"
     },
     {
         nombre:"Proyecto 2",
-        imagen:"../public/img/proyecto2.png"
+        imagen:"./img/proyecto2.png"
     },
     {
         nombre:"Proyecto 3",
-        imagen:"../public/img/proyecto3.png"
+        imagen:"./img/proyecto3.png"
     },
 ]
 
@@ -141,15 +141,15 @@ const favContainer = document.getElementById('favprojects');
 const myfavprojects = [
     {
         nombre:"FProyecto 1",
-        imagen:"../public/img/favproject1.jpg"
+        imagen:"./img/favproject1.jpg"
     },
     {
         nombre:"FProyecto 2",
-        imagen:"../public/img/favproject2.jpg"
+        imagen:"./img/favproject2.jpg"
     },
     {
         nombre:"FProyecto 3",
-        imagen:"../public/img/favproject3.jpg"
+        imagen:"./img/favproject3.jpg"
     },
 ]
 
