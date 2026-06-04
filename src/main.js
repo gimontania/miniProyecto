@@ -12,7 +12,7 @@ const mainSkillsContainer = document.getElementById("skills-container");
 const myMainSkills = [
   {
       nombre:"",
-      picture: "../public/logoHtml.png",
+      picture: "../img/logoHtml.png",
        
   },
   {
@@ -43,15 +43,15 @@ const myMainSkills = [
 ];
 
 let mainSkillsHTML = "";
-myMainSkills.forEach(function(skill) { //array que veo, array que itero :))
+myMainSkills.forEach(function(skill) { 
   mainSkillsHTML += `
       <div class ="bg-[#1E293B] p-4 rounded-xl text-center hover:scale-105 transition mb-4">
-          <img src="${skill.picture}" alt="${skill.skillname}" class="w-16 h-16">
+          <img src="${skill.picture}" alt="${skill.nombre}" class="w-16 h-16">
       </div>
     `;
 });
 
-mainSkillsContainer.insertAdjacentHTML('afterbegin', mainSkillsHTML); //profe la ia me dijo esto del afterbegin y el insertAdjacentHTML pero me sirvió porque ya aprendí una nueva función :))
+mainSkillsContainer.insertAdjacentHTML('afterbegin', mainSkillsHTML); 
 
 // const skillsContainer = document.getElementById('skills-container');
 // const myskills = [
