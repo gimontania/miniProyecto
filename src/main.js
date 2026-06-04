@@ -17,7 +17,7 @@ const myMainSkills = [
   },
   {
       nombre: "",
-      picture: "../public/logoCSS.png",
+      picture: "./logoCSS.png",
          
   },
   {
